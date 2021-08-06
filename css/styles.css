@@ -74,7 +74,7 @@ h2 {
   text-transform: uppercase;
 }
 div {
-  border: solid 1px #34495e;
+  border: solid 2px #34495e;
   border-radius: 20px 20px 20px 0;
   margin: 10px;
 }
@@ -139,7 +139,7 @@ header p span {
 }
 .perso article img,
 .langage article img {
-  height: 20px;
+  height: 30px;
   background-size: contain;
   background-position: center;
 }
@@ -196,7 +196,7 @@ header p span {
   width: 100%;
 }
 .langage article img {
-  height: 20px;
+  height: 30px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
