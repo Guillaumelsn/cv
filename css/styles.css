@@ -66,28 +66,28 @@ body {
   background-color: #efefef;
 }
 h2 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #34495e;
   text-align: center;
   text-transform: uppercase;
 }
 div {
-  border: solid 2px #34495e;
-  border-radius: 30px;
-  margin: 25px;
+  border: solid 1px #34495e;
+  border-radius: 20px 20px 20px 0;
+  margin: 10px;
 }
 header,
 section {
-  padding: 50px 20px;
+  padding: 20px 10px;
 }
 header {
   background-color: #efefef;
   color: #efefef;
 }
 header article {
-  margin: 150px 0 50px;
+  margin: 20px 0 20px;
   padding: 25px;
 }
 header a {
@@ -98,26 +98,26 @@ header a {
   background-position: center;
   width: calc(100% - 20px);
   margin: 50px auto;
-  padding: 125px;
+  padding: 50px;
 }
 header p {
   border: solid 2px #34495e;
-  border-radius: 30px;
+  border-radius: 20px 20px 20px 0;
   color: #3498db;
-  font-size: 14px;
-  line-height: 30px;
+  font-size: 12px;
+  line-height: 20px;
   padding: 25px;
 }
 header p span {
   color: #f1c40f;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
 }
 .contact article {
-  margin: 10px 25px;
+  margin: 10px 20px;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
 }
 .contact article p {
   margin: 25px;
@@ -126,58 +126,102 @@ header p span {
 .contact article p:nth-of-type(1) {
   text-align: left;
   color: #f1c40f;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 3px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .perso article,
 .langage article {
   width: calc(50% - 20px);
   text-align: center;
-  margin: 50px 10px;
+  margin: 20px 10px;
 }
 .perso article img,
 .langage article img {
-  height: 120px;
+  height: 30px;
   background-size: contain;
   background-position: center;
 }
 .perso article p,
 .langage article p {
-  display: block;
-  font-size: 20px;
-  margin-top: 50px;
+  font-size: 12px;
+  margin-top: 10px;
   color: #f1c40f;
   font-weight: 700;
 }
 .etudes div,
 .exp div {
-  padding: 50px;
+  padding: 20px;
 }
 .etudes div article,
 .exp div article {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .etudes div article p,
 .exp div article p {
-  font-size: 14px;
+  font-size: 12px;
   color: #3498db;
-  line-height: 25px;
+  line-height: 20px;
 }
 .etudes div article p:nth-of-type(1),
 .exp div article p:nth-of-type(1) {
-  margin-bottom: 25px;
   color: #f1c40f;
-  font-size: 18px;
+  font-size: 16px;
 }
 .langage article p {
-  text-align: left;
+  text-align: center;
   line-height: 30px;
-  padding: 20px;
+  padding: 10px;
+  font-size: 12px;
+  margin: 0;
+}
+.langage article:nth-of-type(1) {
+  width: 100%;
+  margin-bottom: 0;
+}
+.langage article:nth-of-type(1) img {
+  display: block;
+}
+.langage article:nth-of-type(1) p {
+  width: calc(50% - 20px);
+  display: block;
+}
+.langage article:nth-of-type(1) div {
+  border: none;
+  justify-content: space-around;
+  margin-top: 0;
 }
 .langage article:nth-last-child(1) {
   width: 100%;
+}
+.langage article img {
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+.logiciel img {
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+.logiciel div {
+  justify-content: space-around;
+  padding: 20px;
+}
+.logiciel article {
+  color: #f1c40f;
+  font-size: 12px;
+  width: calc(50% - 20px);
+  margin-bottom: 15px;
+  text-align: center;
+}
+.logiciel article p {
+  padding: 10px;
 }
 /* ------------------------ MEDIA QUERIES ---- */
 @media screen and (max-width: valeur px) {
