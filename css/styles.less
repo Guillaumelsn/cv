@@ -1,4 +1,10 @@
 @charset "utf-8";
+@color1: #f1c40f;
+@color2: #34495e;
+@color3: #3498db;
+@color4: #efefef;
+//-----LESS:    width: ~"calc(50% - 20px)";
+//-----CSS:    width: calc(50% - 20px);
 
 *{
     box-sizing: border-box;
@@ -16,22 +22,161 @@ img, object, embed, canvas, video, audio, picture, svg {
 	max-width: 100%;
 	height: auto;
 }
-
+.clear {
+    clear: both;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    background-color: @color4;
+}
+h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: @color2;
+    text-align: center;
+    text-transform: uppercase;
+}
+header, section {
+    padding: 50px 20px;
+
 }
 
 header {
-    .logo {
-        display: block;
-        background-image: url(../img/logo.png);
-        height: 100px;
-        margin: 30px auto;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding: 100px 50px;
+    background-color: @color4;
+    color: @color4;
+    article {
+        margin: 150px 0 50px;
+        padding: 25px;
 
     }
+    a{
+        background-image: url(../img/logo.png);
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: ~"calc(100% - 20px)";
+        margin: 50px auto;
+        padding: 125px;
+    }
+    p {
+        border: solid 2px @color2;
+        border-radius: 30px;
+        color: @color2;
+        font-size: 14px;
+        line-height: 30px;
+        padding: 25px;
+        span {
+            color: @color1;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+    
 }
+
+.contact {
+    div {
+        border: solid 2px @color2;
+        border-radius: 30px;
+        margin: 25px;
+    }
+    article {
+        margin: 10px 25px;
+        text-align: center;
+        p{
+            margin: 25px;
+            color: @color3;
+            &:nth-of-type(1) {
+                text-align: left;
+                color: @color1;
+                font-size: 22px;
+                font-weight: 700;
+                letter-spacing: 3px;
+                margin-top: 50px;
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+@media screen and (min-device-width: 575px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------ MEDIA QUERIES ---- */
+
+@media screen and (max-width: valeur px) {
+    .center {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
