@@ -66,12 +66,17 @@ body {
   background-color: #efefef;
 }
 h2 {
-  font-size: 45px;
+  font-size: 24px;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   color: #34495e;
   text-align: center;
   text-transform: uppercase;
+}
+div {
+  border: solid 2px #34495e;
+  border-radius: 30px;
+  margin: 25px;
 }
 header,
 section {
@@ -98,7 +103,7 @@ header a {
 header p {
   border: solid 2px #34495e;
   border-radius: 30px;
-  color: #34495e;
+  color: #3498db;
   font-size: 14px;
   line-height: 30px;
   padding: 25px;
@@ -107,15 +112,12 @@ header p span {
   color: #f1c40f;
   font-weight: 400;
   text-transform: uppercase;
-}
-.contact div {
-  border: solid 2px #34495e;
-  border-radius: 30px;
-  margin: 25px;
+  font-size: 14px;
 }
 .contact article {
   margin: 10px 25px;
   text-align: center;
+  font-size: 14px;
 }
 .contact article p {
   margin: 25px;
@@ -124,10 +126,58 @@ header p span {
 .contact article p:nth-of-type(1) {
   text-align: left;
   color: #f1c40f;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 3px;
   margin-top: 50px;
+}
+.perso article,
+.langage article {
+  width: calc(50% - 20px);
+  text-align: center;
+  margin: 50px 10px;
+}
+.perso article img,
+.langage article img {
+  height: 120px;
+  background-size: contain;
+  background-position: center;
+}
+.perso article p,
+.langage article p {
+  display: block;
+  font-size: 20px;
+  margin-top: 50px;
+  color: #f1c40f;
+  font-weight: 700;
+}
+.etudes div,
+.exp div {
+  padding: 50px;
+}
+.etudes div article,
+.exp div article {
+  margin-bottom: 25px;
+}
+.etudes div article p,
+.exp div article p {
+  font-size: 14px;
+  color: #3498db;
+  line-height: 25px;
+}
+.etudes div article p:nth-of-type(1),
+.exp div article p:nth-of-type(1) {
+  margin-bottom: 25px;
+  color: #f1c40f;
+  font-size: 18px;
+}
+.langage article p {
+  text-align: left;
+  line-height: 30px;
+  padding: 20px;
+}
+.langage article:nth-last-child(1) {
+  width: 100%;
 }
 /* ------------------------ MEDIA QUERIES ---- */
 @media screen and (max-width: valeur px) {

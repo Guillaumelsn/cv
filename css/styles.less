@@ -40,14 +40,21 @@ body {
     font-family: 'Roboto Slab', serif;
     background-color: @color4;
 }
+//recurrences
 h2 {
-    font-size: 45px;
+    font-size: 24px;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     color: @color2;
     text-align: center;
     text-transform: uppercase;
 }
+div {
+    border: solid 2px @color2;
+    border-radius: 30px;
+    margin: 25px;
+}
+//-----------------------
 header, section {
     padding: 50px 20px;
 
@@ -74,7 +81,7 @@ header {
     p {
         border: solid 2px @color2;
         border-radius: 30px;
-        color: @color2;
+        color: @color3;
         font-size: 14px;
         line-height: 30px;
         padding: 25px;
@@ -82,27 +89,24 @@ header {
             color: @color1;
             font-weight: 400;
             text-transform: uppercase;
+            font-size: 14px;
         }
     }
     
 }
 
 .contact {
-    div {
-        border: solid 2px @color2;
-        border-radius: 30px;
-        margin: 25px;
-    }
     article {
         margin: 10px 25px;
         text-align: center;
+        font-size: 14px;
         p{
             margin: 25px;
             color: @color3;
             &:nth-of-type(1) {
                 text-align: left;
                 color: @color1;
-                font-size: 22px;
+                font-size: 18px;
                 font-weight: 700;
                 letter-spacing: 3px;
                 margin-top: 50px;
@@ -112,7 +116,57 @@ header {
     }
 }
 
+.perso, .langage {
+    article {
+        width: ~"calc(50% - 20px)";
+        text-align: center;
+        margin: 50px 10px;
+        img {
+            height: 120px;
+            background-size:contain;
+            background-position: center;
 
+        }
+        p {
+            display: block;
+            font-size: 20px;
+            margin-top: 50px;
+            color: @color1;
+            font-weight: 700;
+        }
+    }
+}
+
+.etudes, .exp {
+    div{
+        padding: 50px;
+        article {
+            margin-bottom: 25px;
+            p{
+                font-size: 14px;
+                color: @color3;
+                line-height: 25px;
+                &:nth-of-type(1){
+                margin-bottom: 25px;
+                color: @color1;
+                font-size: 18px;
+                }
+            }
+        }
+    }
+}
+.langage {
+    article {
+        p {
+            text-align: left;
+            line-height: 30px;
+            padding: 20px;
+        }
+        &:nth-last-child(1) {
+            width: 100%;
+        }
+    }
+}
 
 
 
