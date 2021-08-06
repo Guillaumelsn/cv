@@ -139,7 +139,7 @@ header p span {
 }
 .perso article img,
 .langage article img {
-  height: 30px;
+  height: 20px;
   background-size: contain;
   background-position: center;
 }
@@ -196,14 +196,14 @@ header p span {
   width: 100%;
 }
 .langage article img {
-  height: 30px;
+  height: 20px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
 }
 .logiciel img {
-  height: 30px;
+  height: 20px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
