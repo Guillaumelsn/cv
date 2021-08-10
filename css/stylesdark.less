@@ -43,7 +43,7 @@ li {
 body {
     margin: 0;
     font-family: 'Roboto Slab', serif;
-    background-color: @color4;
+    background-color: @color2;
 }
 //recurrences
 .container {
@@ -53,12 +53,12 @@ h2 {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 30px;
-    color: @color2;
+    color: @color1;
     text-align: center;
     text-transform: uppercase;
 }
 div {
-    border: solid 2px @color2;
+    border: solid 2px @color4;
     border-radius: 20px 20px 20px 0;
     margin: 10px;
 }
@@ -76,7 +76,8 @@ figure {
 //-----------------------
 .btn {
     position: fixed;
-    background-image: url(/img/black_1.png);
+    background-image: url(../img_dark/white.png);
+    background-color: @color2;
     background-size: contain;
     background-position: center;
     padding: 2px;
@@ -88,18 +89,19 @@ figure {
 }
 header, section {
     padding: 20px 10px;
+    color: 2;
 
 }
 
 header {
-    background-color: @color4;
+    background-color: @color2;
     color: @color4;
     article {
         margin: 20px 10px 20px;
 
     }
     a{
-        background-image: url(../img/darkLogo.png);
+        background-image: url(../img_dark/whiteLogo.png);
         display: block;
         background-size: contain;
         background-repeat: no-repeat;
@@ -109,9 +111,9 @@ header {
         padding: 50px;
     }
     p {
-        border: solid 2px @color2;
+        border: solid 2px @color4;
         border-radius: 20px 20px 20px 0;
-        color: @color3;
+        color: @color4;
         font-size: 14px;
         line-height: 25px;
         padding: 25px;
@@ -131,10 +133,10 @@ header {
         font-size: 14px;
         p{
             margin: 23px;
-            color: @color3;
+            color: @color4;
             &:nth-of-type(1) {
                 text-align: left;
-                color: @color1;
+                color: @color3;
                 font-size: 18px;
                 font-weight: 700;
                 letter-spacing: 3px;
@@ -149,11 +151,11 @@ header {
     article {
         width: ~"calc(50% - 20px)";
         text-align: center;
-        padding: 15px 10px;
+        padding: 14px 10px;
         p {
             font-size: 14px;
             margin-top: 10px;
-            color: @color1;
+            color: @color3;
         }
     }
 }
@@ -161,22 +163,22 @@ header {
     article {
         &:nth-of-type(1) {
             figure {
-                background-image: url(../img/passion.png);
+                background-image: url(../img_dark/passion_1.png);
             }
         }
         &:nth-of-type(2) {
             figure {
-                background-image: url(../img/commercial_1.png);
+                background-image: url(../img_dark/commercial_2.png);
             }
         }
         &:nth-of-type(3) {
             figure {
-                background-image: url(../img/reflechie.png);
+                background-image: url(../img_dark/reflechie_1.png);
             }
         }
         &:nth-of-type(4) {
             figure {
-                background-image: url(../img/create.png);
+                background-image: url(../img_dark/creativ_1.png);
             }
         }
     }
@@ -185,22 +187,22 @@ header {
     article {
         &:nth-of-type(1) {
             figure {
-                background-image: url(../img/langue.png);
+                background-image: url(../img_dark/langue_1.png);
             }
         }
         &:nth-of-type(2) {
             figure {
-                background-image: url(../img/html_1.png);
+                background-image: url(../img_dark/html_2.png);
             }
         }
         &:nth-of-type(3) {
             figure {
-                background-image: url(../img/css_1.png);
+                background-image: url(../img_dark/css_2.png);
             }
         }
         &:nth-of-type(4) {
             figure {
-                background-image: url(../img/js.png);
+                background-image: url(../img_dark/js_1.png);
             }
         }
     }
@@ -209,32 +211,32 @@ header {
     article {
         &:nth-of-type(1) {
             figure {
-                background-image: url(../img/ai.png);
+                background-image: url(../img_dark/ai_1.png);
             }
         }
         &:nth-of-type(2) {
             figure {
-                background-image: url(../img/code.png);
+                background-image: url(../img_dark/code_1.png);
             }
         }
         &:nth-of-type(3) {
             figure {
-                background-image: url(../img/ps.png);
+                background-image: url(../img_dark/ps_1.png);
             }
         }
         &:nth-of-type(4) {
             figure {
-                background-image: url(../img/responsive_1.png);
+                background-image: url(../img_dark/responsive_2.png);
             }
         }
         &:nth-of-type(5) {
             figure {
-                background-image: url(../img/bootstrap_1.png);
+                background-image: url(../img_dark/boots.png);
             }
         }
         &:nth-of-type(6) {
             figure {
-                background-image: url(../img/anim.png);
+                background-image: url(../img_dark/anim_1.png);
             }
         }
     }
@@ -247,7 +249,7 @@ header {
             margin-bottom: 20px;
             p{
                 font-size: 14px;
-                color: @color3;
+                color: @color4;
                 line-height: 20px;
                 &:nth-of-type(1){
                 color: @color1;
@@ -304,7 +306,7 @@ header {
         padding: 20px;
     }
     article {
-        color: @color1;
+        color: @color3;
         width: ~"calc(50% - 20px)";
         margin-bottom: 15px;
         text-align: center;

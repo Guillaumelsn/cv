@@ -6,187 +6,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+    <link id="light" href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="./java/dark.js"></script>
 </head>
-    <body>
+    <div class="center">
+        <body>
+            <button onclick="toggleTheme()" class="btn"></button>
+            <header>
+                <a href="guillaumelsn.fr" target="blank" class="logo"></a>
+                    <article>
+                        <h2>Objectif:</h2>
+                        <p><span>Intégrer</span> une entreprise m’offrant la possibilitée de me <span>perfectionner</span>
+                            et ainsi <span>évoluer </span> dans la profession tout en poussant toujours plus 
+                            loin mes <span>connaissances</span> personnelles</p>
+                    </article>
+            </header>
 
-        <header>
-            <a href="www.guillaumelsn.fr" class="logo"></a>
-                <article>
-                    <h2>Objectif:</h2>
-                    <p><span>Intégrer</span> une entreprise m’offrant la possibilitée de me <span>perfectionner</span>
-                         et ainsi <span>évoluer </span> dans la profession tout en poussant toujours plus 
-                         loin mes <span>connaissances</span> personnelles</p>
-                </article>
-        </header>
-
-        <main>
-
-            <section class="contact">
-                <h2>Contact:</h2>
-                <div>
-                <article>
-                    <p>Adresse :</p>
-                    <p>66 rue Georges maertens <br>59350 Saint André Lez Lille</p>
-                </article>
-                <article>
-                    <p>Contacts :</p>
-                    <p>06.49.56.98.74</p>
-                    <p>guillaumelesenne@gmail.com</p>
-                </article>
-                <article>
-                    <p>Date de naissance</p>
-                    <p>02 decembre 1993</p>
-                </article>
-            </div>
-            </section>
-
-            <section class="perso">
-                <h2>Personnalitée:</h2>
-                <div class="flex">
-                    <article>
-                        <img src="img/talk.png" alt="Heart">
-                        <p>Passionné</p>
-                    </article>
-                    <article>
-                        <img src="img/market.png" alt="Commercial">
-                        <p>Commercial</p>
-                    </article>
-                    <article>
-                        <img src="img/thinking.png" alt="Thinking">
-                        <p>Réfléchi</p>
-                    </article>
-                    <article>
-                        <img src="img/outils-creatifs.png" alt="Create">
-                        <p>Créatif</p>
-                    </article>
-                </div>
-            </section>
-
-            <section class="etudes">
-                <h2>Études :</h2>
-                <div>
-                    <article>
-                        <p>2012</p>
-                        <p>Baccalauréat Proféssionnel Technicien Du Froid Et de l’air Lycée Édouard Branly, Boulogne sur mer.</p>
-                    </article>
-                    <article>
-                        <p>2013</p>
-                        <p>C.A.P Instalateur Thermique, C.F.A Hesdigneul les boulogne</p>
-                    </article>
-                    <article>
-                        <p>2014</p>
-                        <p>Contrat de proféssionnalisation Form’Avenir, Boulogne sur mer.</p>
-                    </article>
-                    <article>
-                        <p>2015</p>
-                        <p>Première année de BTS Mvanagement des unitées commerciales AGFCPS, Boulogne sur mer</p>
-                    </article>
-                    <article>
-                        <p>2019</p>
-                        <p>Titre Proféssionnel Web Designer AFPA , Calais.</p>
-                    </article>  
-                </div>    
-            </section>
-
-            <section class="exp">
-                <h2>Expériences</h2>
-                <div>
-                    <article>
-                        <p>2013</p>
-                        <p>Plombier Chauffagiste Barras Gilbert, Beuvrequen ( Apprentissage )</p>
-                    </article>
-                    <article>
-                        <p>2014</p>
-                        <p>Employé Libre Service Grande distribution alimentaire, Le portel </p>
-                    </article>
-                    <article>
-                        <p>2015</p>
-                        <p>BTS Management des unitées commerciales Employé Libre Service en grande surface</p>
-                    </article>
-                    <article>
-                        <p>2015/2018</p>
-                        <p>Employé Libre Service Grande distribution alimentaire, Le Portel</p>
-                    </article>
-                    <article>
-                        <p>2019</p>
-                        <p>Commercial Surgelé à domicile Maximo, Isques</p>
-                    </article>
-                    <article>
-                        <p>2019/2020</p>
-                        <p>Titre Proféssionnel de Niveau III Web Désigner Afpa, Calais</p>
-                    </article>
-                    <article>
-                        <p>2020</p>
-                        <p>Employé IAA Frais embal, Boulogne Sur Mer</p>
-                    </article>
-                    <article>
-                        <p>2021</p>
-                    <p>Developpeur front-End Simplon, Roubaix</p>
-                    </article>
-                </div>
-            </section>
-
-            <section class="langage">
-                <div class="flex">
-                    <article>
-                        <img src="./img/flag.png" alt="Flag">
+            <main>
+                <div class="container">
+                    <section class="contact">
+                        <h2>Contact:</h2>
+                        <div>
+                        <article>
+                            <p>Adresse :</p>
+                            <p>66 rue Georges maertens <br>59350 Saint André Lez Lille</p>
+                        </article>
+                        <article>
+                            <p>Contacts :</p>
+                            <p>06.49.56.98.74</p>
+                            <p>guillaumelesenne@gmail.com</p>
+                        </article>
+                        <article>
+                            <p>Date de naissance</p>
+                            <p>02 decembre 1993</p>
+                        </article>
+                    </div>
+                    </section>
+                
+                    <section class="perso">
+                        <h2>Personnalitée:</h2>
                         <div class="flex">
-                            <p>Anglais</p>
-                            <p>Français</p> 
-                        </div>                     
-                    </article>
-                    <article>
-                        <img src="./img/html.png" alt="Logo Html">
-                        <p>Html</p>
-                    </article>
-                    <article>
-                        <img src="./img/css.png" alt="Logo Css">
-                        <p>Less</p>
-                    </article>
-                    <article>
-                        <img src="./img/javascript.png" alt="Logo JavaScript">
-                        <p>JavaScript</p>
-                    </article>
-            </section>
+                            <article>
+                                <figure></figure>
+                                <p>Passionné</p>
+                            </article>
+                            <article>
+                                <figure></figure>
+                                <p>Commercial</p>
+                            </article>
+                            <article>
+                                <figure></figure>
+                                <p>Réfléchi</p>
+                            </article>
+                            <article>
+                                <figure></figure>
+                                <p>Créatif</p>
+                            </article>
+                        </div>
+                    </section>
+                    <section class="etudes">
+                        <h2>Études :</h2>
+                        <div>
+                            <article>
+                                <p>2012</p>
+                                <p>Baccalauréat Proféssionnel Technicien Du Froid Et de l’air Lycée Édouard Branly, Boulogne sur mer.</p>
+                            </article>
+                            <article>
+                                <p>2013</p>
+                                <p>C.A.P Instalateur Thermique, C.F.A Hesdigneul les boulogne</p>
+                            </article>
+                            <article>
+                                <p>2014</p>
+                                <p>Contrat de proféssionnalisation Form’Avenir, Boulogne sur mer.</p>
+                            </article>
+                            <article>
+                                <p>2015</p>
+                                <p>Première année de BTS Mvanagement des unitées commerciales AGFCPS, Boulogne sur mer</p>
+                            </article>
+                            <article>
+                                <p>2019</p>
+                                <p>Titre Proféssionnel Web Designer AFPA , Calais.</p>
+                            </article> 
+                            <article>
+                                <p>2021</p>
+                                <p>Ms, Développeur Front Simplon, Roubaix</p>
+                            </article> 
+                        </div>    
+                    </section>
+                    <section class="exp">
+                        <h2>Expériences</h2>
+                        <div>
+                            <article>
+                                <p>2013</p>
+                                <p>Plombier Chauffagiste Barras Gilbert, Beuvrequen ( Apprentissage )</p>
+                            </article>
+                            <article>
+                                <p>2014</p>
+                                <p>Employé Libre Service Grande distribution alimentaire, Le portel </p>
+                            </article>
+                            <article>
+                                <p>2015</p>
+                                <p>BTS Management des unitées commerciales Employé Libre Service en grande surface</p>
+                            </article>
+                            <article>
+                                <p>2015/2018</p>
+                                <p>Employé Libre Service Grande distribution alimentaire, Le Portel</p>
+                            </article>
+                            <article>
+                                <p>2019</p>
+                                <p>Commercial Surgelé à domicile Maximo, Isques</p>
+                            </article>
+                            <article>
+                                <p>2019/2020</p>
+                                <p>Titre Proféssionnel de Niveau III Web Désigner Afpa, Calais</p>
+                            </article>
+                            <article>
+                                <p>2020</p>
+                                <p>Employé IAA Frais embal, Boulogne Sur Mer</p>
+                            </article>
+                            <article>
+                                <p>2021</p>
+                            <p>Developpeur front-End Simplon, Roubaix</p>
+                            </article>
+                        </div>
+                    </section>
 
-            <section class="logiciel">
-                <div class="flex">
-                    <article>
-                        <img src="./img/illustrator.png" alt="Logo illustrator">
-                        <p>Illustrator</p>
-                    </article>
-                    <article>
-                        <img src="./img/visual.png" alt="Logo Visual">
-                        <p>Visual studio</p>
-                        
-                    </article>
-                    <article>
-                        <img src="./img/photoshop.png" alt="Logo Photoshop">
-                        <p>Photoshop</p>
-                        
-                    </article>
-                    <article>
-                        <img src="./img/responsive.png" alt="">
-                        <p>Mobil First</p>
-                       
-                    </article>
-                    <article>
-                        <img src="./img/bootstrap.png" alt="Logo Bootstrap">
-                        <p>Bootstrap</p>
-                        
-                    </article>
-                    <article>
-                        <img src="./img/animate.png" alt="Logo Animate">
-                        <p>Animate</p>
-                        
-                    </article>
+                    <section class="langage">
+                        <h2>Langages</h2>
+                        <div class="flex">
+                            <article>
+                                <figure></figure>
+                                <p>Anglais</p>
+                                <p>Français</p> 
+                            </article>
+                            <article>
+                                <figure></figure>
+                                <p>Html</p>
+                            </article>
+                            <article>
+                                <figure></figure>
+                                <p>Less</p>
+                            </article>
+                            <article>
+                                <figure></figure>
+                                <p>JavaScript</p>
+                            </article>
+                    </section>
+
+                    <section class="logiciel">
+                        <h2>Logiciels</h2>
+                        <div class="flex">
+                            <article>
+                                <figure></figure>
+                                <p>Illustrator</p>
+                            </article>
+                            <article>
+                                <figure></figure>
+                                <p>Visual studio</p>
+                            </article>
+                            <article>
+                                <figure></figure>
+                                <p>Photoshop</p>
+                            </article>
+                            <article>
+                                <figure></figure>
+                                <p>Mobil First</p>
+                            </article>
+                            <article>
+                                <figure></figure>
+                                <p>Bootstrap</p>
+                            </article>
+                            <article>
+                                <figure></figure>
+                                <p>Animate</p> 
+                            </article>
+                        </div>
+                    </section>
                 </div>
-            </section>
-
-        </main>
+            </main>
+    </div>
 </body>
+
+
 </html>
