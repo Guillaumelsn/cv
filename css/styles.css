@@ -53,16 +53,19 @@ svg {
 .flex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .center {
   max-width: 960px;
   margin: 0 auto;
-  border: 0;
-  border-radius: 0;
+  padding: 0 20px;
   background-color: #efefef;
 }
 a {
   text-decoration: none;
+}
+h5 {
+  display: none;
 }
 li {
   list-style-type: none;
@@ -72,11 +75,6 @@ body {
   font-family: 'Roboto Slab', serif;
   background-color: #efefef;
 }
-.container {
-  border: none;
-  border-radius: 0 0 0 0;
-  margin-bottom: 0;
-}
 h2 {
   font-size: 18px;
   font-weight: 700;
@@ -85,10 +83,10 @@ h2 {
   text-align: center;
   text-transform: uppercase;
 }
-div {
+section {
   border: solid 2px #34495e;
   border-radius: 20px 20px 20px 0;
-  margin: 10px;
+  margin-bottom: 50px;
 }
 img {
   height: 50px;
@@ -121,7 +119,7 @@ header {
   background-color: #efefef;
   color: #efefef;
 }
-header article {
+header .article {
   margin: 20px 10px 20px;
 }
 header a {
@@ -138,7 +136,7 @@ header p {
   border: solid 2px #34495e;
   border-radius: 20px 20px 20px 0;
   color: #3498db;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 25px;
   padding: 25px;
 }
@@ -147,16 +145,16 @@ header p span {
   font-weight: 400;
   text-transform: uppercase;
 }
-.contact article {
+.contact .article {
   margin: 10px 20px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
 }
-.contact article p {
+.contact .article p {
   margin: 23px;
   color: #3498db;
 }
-.contact article p:nth-of-type(1) {
+.contact .article p:nth-of-type(1) {
   text-align: left;
   color: #f1c40f;
   font-size: 18px;
@@ -164,107 +162,109 @@ header p span {
   letter-spacing: 3px;
   margin-top: 20px;
 }
-.perso article,
-.langage article {
+.perso .article,
+.langage .article,
+.hobbies .article {
   width: calc(50% - 20px);
+  justify-content: space-between;
   text-align: center;
   padding: 15px 10px;
 }
-.perso article p,
-.langage article p {
-  font-size: 14px;
+.perso .article p,
+.langage .article p,
+.hobbies .article p {
+  font-size: 16px;
   margin-top: 10px;
   color: #f1c40f;
 }
-.perso article:nth-of-type(1) figure {
+.perso .article:nth-of-type(1) figure {
   background-image: url(../img/passion.png);
 }
-.perso article:nth-of-type(2) figure {
+.perso .article:nth-of-type(2) figure {
   background-image: url(../img/commercial_1.png);
 }
-.perso article:nth-of-type(3) figure {
+.perso .article:nth-of-type(3) figure {
   background-image: url(../img/reflechie.png);
 }
-.perso article:nth-of-type(4) figure {
+.perso .article:nth-of-type(4) figure {
   background-image: url(../img/create.png);
 }
-.langage article:nth-of-type(1) figure {
+.langage .article:nth-of-type(1) figure {
   background-image: url(../img/langue.png);
 }
-.langage article:nth-of-type(2) figure {
+.langage .article:nth-of-type(2) figure {
   background-image: url(../img/html_1.png);
 }
-.langage article:nth-of-type(3) figure {
+.langage .article:nth-of-type(3) figure {
   background-image: url(../img/css_1.png);
 }
-.langage article:nth-of-type(4) figure {
+.langage .article:nth-of-type(4) figure {
   background-image: url(../img/js.png);
 }
-.logiciel article:nth-of-type(1) figure {
+.logiciel .article:nth-of-type(1) figure {
   background-image: url(../img/ai.png);
 }
-.logiciel article:nth-of-type(2) figure {
+.logiciel .article:nth-of-type(2) figure {
   background-image: url(../img/code.png);
 }
-.logiciel article:nth-of-type(3) figure {
+.logiciel .article:nth-of-type(3) figure {
   background-image: url(../img/ps.png);
 }
-.logiciel article:nth-of-type(4) figure {
+.logiciel .article:nth-of-type(4) figure {
   background-image: url(../img/responsive_1.png);
 }
-.logiciel article:nth-of-type(5) figure {
+.logiciel .article:nth-of-type(5) figure {
   background-image: url(../img/bootstrap_1.png);
 }
-.logiciel article:nth-of-type(6) figure {
+.logiciel .article:nth-of-type(6) figure {
   background-image: url(../img/anim.png);
 }
 .etudes div,
 .exp div {
-  padding: 20px;
+  padding: 10px;
 }
-.etudes div article,
-.exp div article {
+.etudes div .article,
+.exp div .article {
   margin-bottom: 20px;
 }
-.etudes div article p,
-.exp div article p {
-  font-size: 14px;
+.etudes div .article p,
+.exp div .article p {
+  font-size: 16px;
   color: #3498db;
   line-height: 20px;
 }
-.etudes div article p:nth-of-type(1),
-.exp div article p:nth-of-type(1) {
+.etudes div .article p:nth-of-type(1),
+.exp div .article p:nth-of-type(1) {
   color: #f1c40f;
   font-size: 16px;
 }
-.langage article p {
+.langage .article p {
   text-align: center;
   line-height: 30px;
   padding: 10px;
   margin: 0;
 }
-.langage article:nth-of-type(1) {
+.langage .article:nth-of-type(1) {
   width: 100%;
   margin-bottom: 0;
 }
-.langage article:nth-of-type(1) img {
+.langage .article:nth-of-type(1) img {
   display: block;
   margin-bottom: 5px;
 }
-.langage article:nth-of-type(1) p {
+.langage .article:nth-of-type(1) p {
   text-align: center;
   line-height: initial;
   padding: 5px;
 }
-.langage article:nth-of-type(1) div {
-  border: none;
+.langage .article:nth-of-type(1) div {
   justify-content: space-around;
   margin-top: 0;
 }
-.langage article:nth-last-child(1) {
+.langage .article:nth-last-child(1) {
   width: 100%;
 }
-.langage article img {
+.langage .article img {
   margin: 0 auto;
 }
 .logiciel img {
@@ -272,16 +272,36 @@ header p span {
 }
 .logiciel div {
   justify-content: space-around;
-  padding: 20px;
+  padding: 10px;
 }
-.logiciel article {
+.logiciel .article {
   color: #f1c40f;
   width: calc(50% - 20px);
   margin-bottom: 15px;
   text-align: center;
 }
-.logiciel article p {
+.logiciel .article p {
   padding: 10px;
+}
+.hobbies {
+  margin-bottom: 0;
+  margin: 0 auto;
+  padding: 10px;
+}
+.hobbies .flex {
+  justify-content: space-around;
+}
+.hobbies .article:nth-of-type(1) figure {
+  background-image: url(../img/avironblack.png );
+}
+.hobbies .article:nth-of-type(2) figure {
+  background-image: url(../img/ciclysmblack.png );
+}
+.hobbies .article:nth-of-type(3) figure {
+  background-image: url(../img/plateaudark.png );
+}
+.hobbies .article:nth-of-type(4) figure {
+  background-image: url(../img/musiqueblack.png );
 }
 @media screen and (min-device-width: 760px) {
   .container {
@@ -297,7 +317,6 @@ header p span {
   .contact,
   .perso {
     width: calc(50% - 20px);
-    margin: 10px;
   }
   .contact:nth-of-type(1) p,
   .perso:nth-of-type(1) p {
@@ -315,24 +334,23 @@ header p span {
   .langage,
   .logiciel {
     width: calc(50% - 20px);
-    margin: 10px;
   }
   .perso .flex {
     padding: 25px;
   }
-  .perso article p {
+  .perso .article p {
     margin: 15px;
   }
-  .contact article {
+  .contact .article {
     margin: 15px;
   }
   .contact p {
     margin: 10px;
   }
-  .logiciel article {
+  .logiciel .article {
     margin: 10px 0;
   }
-  .logiciel article p {
+  .logiciel .article p {
     text-align: center;
     line-height: 30px;
     padding: 10px;
@@ -348,22 +366,24 @@ header p span {
     height: 150px;
   }
   .langage {
-    width: 30%;
+    width: 50%;
     margin-top: 0;
   }
   .langage .flex {
-    display: block;
-    width: 100%;
+    justify-content: space-around;
   }
-  .langage .flex article {
-    width: 100%;
+  .langage .flex .article {
+    margin: 0 auto;
   }
   .logiciel {
     width: 100%;
   }
-  .logiciel article {
+  .logiciel .article {
     width: calc(33% - 20px);
     justify-content: space-evenly;
+  }
+  .hobbies {
+    width: 50%;
   }
 }
 /* ------------------------ MEDIA QUERIES ---- */
